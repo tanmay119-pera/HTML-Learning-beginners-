@@ -1,0 +1,184 @@
+<!-- ^                                  CHAPTER 4 – LISTS, TABLES & FORMS                                                    -->
+
+<!--& LISTS -->
+<!--Lists are used to display content which represents a list.
+There are two types of lists in HTML: ordered and unordered lists.-->
+
+<!--& UNORDERED LIST -->
+<!--An unordered list is used to list items that do not have a specific order.-->
+<ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+<!--& ORDERED LIST -->
+<!--An ordered list is used to list items in a specific order, typically numbered.-->
+<ol>
+    <li>Phone</li>
+    <li>PC</li>
+    <li>Laptop</li></ol>
+</ol>
+
+<!--& TABLES -->
+<!--The <table> tag in HTML is used to define tables, which are used to format and display
+tabular data.
+
+<tr> tag: Used to display table row.
+<td> tag: Used to display table data.
+<th> tag: Used in place of table data for displaying table headers. 
+
+We can define as many table rows as we want. To add a caption to the table, we use 
+
+<thead> tag: Used to wrap table head (caption & <tr> with <th>)
+<tbody> tag: Used to wrap the table body
+
+Example:-->
+
+
+<table>
+    <caption>Students Report</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>tanmay</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>D</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--& COLSPAN ATTRIBUTE
+
+This attribute is used to create cells spanning multiple columns.
+Spans 3 Columns -->
+
+<th colspan ="3" > tanmay </th>
+
+<!--& HTML FORMS
+
+An HTML <form> tag is used to create a form that collects input from users.-->
+
+<form>
+    <!-- elements of form -->
+</form>
+
+<!--There are different form elements for different kinds of user input.
+<input> element: Can be of type text, checkbox, radio, button and submit.
+
+We also have a 'file' type.
+<textarea> element: Defines a multiline text input 'cols' and 'rows'
+
+attributes can be used to size the text area.
+<select> element: Defines a drop-down list.-->
+
+<!--!          Note: you don't have to remember all the tags, you will automatically memorize them with practice.              -->
+
+<!--& ATTRIBUTES FOR FORM ELEMENTS
+
+We can use the following attributes for form elements:
+1) action: Specifies the URL where the form data will be sent for processing.
+
+2) method: Specifies the HTTP method (GET or POST) to be used when submitting the form.
+
+3) name: Assigns a name to the form element, which can be used to identify it when processing the form data.
+
+4) placeholder: Provides a hint or example text that appears inside the input field when it is empty.
+
+5) value: Specifies the initial value of the form element. For input fields, it can also be used to set the value that
+will be sent when the form is submitted.
+
+6) required: Indicates that the form element must be filled out before the form can be submitted.
+
+7) disabled: Disables the form element, preventing user interaction.
+
+8) readonly: Makes the form element read-only, allowing users to view the value but not modify it.
+
+9) maxlength: Specifies the maximum number of characters allowed in the input field.
+
+10) size: Specifies the visible width of the input field in characters.
+
+11) multiple: Allows users to select multiple options in a file input or select element.
+
+12) accept: Specifies the types of files that can be selected in a file input element.
+
+13) autofocus: Automatically focuses on the form element when the page loads.
+
+14) pattern: Defines a regular expression pattern that the input value must match for validation.
+
+15) password: Specifies that the input field is for entering a password, and the characters will be masked.
+
+16) title: Provides a tooltip that appears when the user hovers over the form element.
+
+17) alt: Provides alternative text for the form element, which is displayed if the element cannot be displayed.-->
+
+<!--& CLASS & ID ATTRIBUTES
+
+The class and id attributes are used to assign unique identifiers to HTML elements, allowing for targeted styling and scripting.
+<div id ="id1" class="group1"> </div>
+
+<div id="id2"class="group1"></div>
+
+<!--& CHECKBOX ATTRIBUTE
+
+The checkbox attribute is used to create a checkbox input field in an HTML form. It allows users to select one or more options from a set of choices. When the checkbox
+is checked, its value is submitted with the form data.<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+<label for ="id1">
+    <input type ="checkbox" value="class X" name="class" id="id1">
+</label>
+
+<label for ="id2">
+    <input type ="checkbox" value="class XI" name="class" id="id2">
+</label>
+
+<!--& SELECT ATTRIBUTE
+
+The select attribute is used to create a drop-down list in an HTML form. It allows users to choose one option from a predefined list of options. The selected option's value is submitted with the form data.
+<select name="options" id="options">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+</select>
+
+<!--& EMBEDDING VIDEOS
+
+To embed videos in HTML, you can use the <video> tag along with various attributes to
+control its behavior. -->
+<video src ='tanmay.mp4'> Error </video>
+
+<!--& ATTRIBUTES FOR VIDEO
+
+We can use the following attributes:
+
+1)src: Specifies the URL of the video file (harry.mp4 in this case).
+
+2)width: Adjusts the width of the video player. Height adjusts automatically to
+maintain aspect ratio.
+
+3)controls: Displays video controls such as play, pause, volume, etc.
+
+4)autoplay: Automatically starts playing the video when the page loads.
+
+5)loop: Causes the video to automatically start over from the beginning when it
+reaches the end.
+
+6)preload: Specifies whether the video should be loaded when the page loads
+(auto, metadata, none). -->
+
+<video width="640" autoplay loop>
+    <source src="harry.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!--& IFRAME TAG -->
+
+<!--The <iframe> tag is used to embed another HTML document within the current document. It allows you to display content from another webpage or website within a specified area of your webpage.-->
+<iframe src="https://www.wikipedia.org" width="600" height="400"></iframe>
