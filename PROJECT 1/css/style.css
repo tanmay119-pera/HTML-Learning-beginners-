@@ -175,10 +175,10 @@ header.scrolled {
 }
 
 .logo-text {
-    font-family: var(--font-display);
-    font-size: 1.8rem;
-    font-weight: 900;
-    font-style: italic;
+    font-family: var(--font-body);
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-style: normal;
     color: var(--red);
     letter-spacing: -0.5px;
 }
@@ -568,12 +568,13 @@ nav ul li a:hover {
 }
 
 .gold-brand {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(3rem, 7vw, 4.5rem);
     color: var(--white);
-    margin-bottom: 4px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
 }
 
 .gold-title {
@@ -1249,3 +1250,4 @@ nav ul li a:hover {
         align-items: center;
     }
 }
+
