@@ -37,4 +37,4 @@ Version Control: Git & GitHub via Mac Terminal
 
 This repository serves as my personal code notebook and sandbox. Every folder contains the raw code, notes and experiments I have written while mastering the core concepts of web development. As I learn more, this repository will continue to grow!
 
-Organized and maintained with ❤️ "Tanmaypera_119"
+Organized and maintained with ❤️ "tanmay119-pera"(ADESH SRIVASTAVA)
